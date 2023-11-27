@@ -16,3 +16,7 @@
 ### Sources
 
 - API: https://rapidapi.com/dickyagustin/api/text-translator2
+
+### `Screen`
+
+![](screen.gif)
