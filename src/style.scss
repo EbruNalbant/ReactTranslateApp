@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #242424;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+#main-page {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 80vw;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    text-align: center;
+    font-size: 35px;
+    color: rgba(156, 65, 22, 0.952);
+
+    @media (max-width: 800px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.upper {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+
+  .react-select {
+    width: 100%;
+    color: black;
+  }
+  .change-button {
+    display: grid;
+    place-items: center;
+  }
+}
+
+.bottom {
+  display: flex;
+  gap: 105px;
+  margin-top: 20px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+  textarea {
+    width: 100%;
+    min-height: 300px;
+    resize: vertical;
+    padding: 10px;
+    max-height: 500px;
+    font-family: "Poppins";
+    font-size: 17px;
+  }
+
+  textarea:disabled {
+    color: rgba(0, 0, 0, 0.724);
+  }
+}
+
+#translate {
+  margin-top: 20px;
+}
